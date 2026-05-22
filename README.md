@@ -20,4 +20,4 @@ Static site — publish directory is the repo root (`.`). Netlify deploys automa
 
 The consultation form uses [Netlify Forms](https://docs.netlify.com/forms/setup/). After linking the site in Netlify, enable form notifications in **Site configuration → Forms**.
 
-Update `mailto:` / Gmail links in `index.html` if your company email differs from `info@novam2.com`.
+Enquiries: **sales@novam2.com** (contact links in `index.html`). In Netlify, set **Forms → Form notifications** to the same address for consultation submissions.
