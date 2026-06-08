@@ -164,61 +164,122 @@
       </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-layout">
-        <header class="section-header">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Get in Touch</h2>
-        </header>
-        <div class="contact-details">
-          <a class="contact-link" href="tel:+6590275317">+65 9027 5317</a>
-          <a class="contact-link" href="mailto:sales@novam2.com">sales@novam2.com</a>
-          <a class="contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sales@novam2.com" target="_blank" rel="noopener noreferrer">Email via Gmail</a>
-          <address class="contact-address">
-            City Hall, Peninsula Plaza, Singapore<br />
-            Postal Code: 179098
-          </address>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-banner">
+        <div class="container contact-banner-inner">
+          <nav class="contact-breadcrumb" aria-label="Breadcrumb">
+            <a href="#about">About</a>
+            <span aria-hidden="true">/</span>
+            <span>Contact Us</span>
+          </nav>
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact Us</h2>
+          <p class="contact-banner-lead">Reach our team for MEP consultancy, project management, and consultation enquiries. We respond promptly to every message.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section consultation" id="consultation" aria-labelledby="consultation-title">
-      <div class="container consultation-inner">
-        <h2 id="consultation-title">Book Consultation</h2>
-        <p>Tell us about your project and our team will respond promptly.</p>
-        <form class="consult-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="consultation" />
-          <p class="hidden" aria-hidden="true">
-            <label>Don't fill this out: <input name="bot-field" /></label>
-          </p>
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required autocomplete="name" />
+      <div class="container contact-body">
+        <header class="contact-connect-header">
+          <h3>Let's get connected</h3>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <article class="contact-card">
+              <span class="contact-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </span>
+              <h4>Need help?</h4>
+              <p>Send us an email for project enquiries and consultations.</p>
+              <a class="contact-card-link" href="mailto:sales@novam2.com">sales@novam2.com</a>
+            </article>
+
+            <article class="contact-card">
+              <span class="contact-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </span>
+              <h4>Call or message</h4>
+              <p>Speak with our team directly by phone or WhatsApp.</p>
+              <a class="contact-card-link" href="tel:+6590275317">+65 9027 5317</a>
+              <a class="contact-card-link contact-card-link-secondary" href="https://wa.me/6590275317" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+            </article>
+
+            <article class="contact-card">
+              <span class="contact-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </span>
+              <h4>Get directions</h4>
+              <address class="contact-card-address">
+                City Hall, Peninsula Plaza<br />
+                Singapore 179098
+              </address>
+              <a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&amp;query=Peninsula+Plaza+Singapore+179098" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+            </article>
+
+            <p class="contact-privacy">We respect your right to privacy and are committed to safeguarding the personal information you share with us.</p>
           </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required autocomplete="email" />
+
+          <div class="contact-form-panel" id="consultation" aria-labelledby="consultation-title">
+            <h3 id="consultation-title">Book consultation</h3>
+            <p class="contact-form-intro">Tell us about your project and our team will respond promptly.</p>
+            <form class="consult-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="consultation" />
+              <p class="hidden" aria-hidden="true">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </p>
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone <span class="label-optional">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+65" />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Briefly describe your project or enquiry"></textarea>
+              </div>
+              <button class="btn btn-primary btn-full" type="submit">Send message</button>
+            </form>
           </div>
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" />
-          </div>
-          <div class="form-row">
-            <label for="message">Project details</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Request Consultation</button>
-        </form>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            title="Nova M2 office location — Peninsula Plaza, Singapore"
+            src="https://maps.google.com/maps?q=Peninsula+Plaza+Singapore+179098&amp;z=15&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="logo logo-footer" href="#about">
-        <img src="assets/images/logo.svg" alt="" width="28" height="28" />
-        <span class="logo-text">Nova M2</span>
-      </a>
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="#about">
+          <img src="assets/images/logo.svg" alt="" width="28" height="28" />
+          <span class="logo-text">Nova M2</span>
+        </a>
+        <p class="footer-tagline">MEP engineering &amp; project management, Singapore.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:sales@novam2.com">sales@novam2.com</a>
+        <a href="tel:+6590275317">+65 9027 5317</a>
+      </div>
       <p class="copyright">&copy; 2026 Nova M2. All rights reserved.</p>
     </div>
   </footer>
