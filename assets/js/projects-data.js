@@ -1,24 +1,9 @@
 const NOVA_PROJECTS = [
   {
-    "slug": "66-kv-switch-gear",
-    "title": "66 kV Switch Gear",
-    "category": "Electrical",
-    "description": "High-voltage switchgear installation oversight, technical coordination, and compliance support for industrial electrical infrastructure.",
-    "images": [
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (1).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (2).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (3).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (4).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (5).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37 (6).jpeg",
-      "assets/projectphotos/66 kv switch gear/WhatsApp Image 2026-06-09 at 14.51.37.jpeg"
-    ]
-  },
-  {
-    "slug": "aa-electrical-switchboard-inspection",
-    "title": "A&A Electrical Switchboard Inspection",
+    "slug": "aanda-electrical-switchboard-inspection",
+    "title": "A&A electrical switch board inspection",
     "category": "A&A Works",
-    "description": "Inspection and advisory for addition & alteration electrical switchboard works, ensuring safety and regulatory compliance.",
+    "description": "MEP engineering and on-site coordination for A&A electrical switch board inspection — a&a works works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/A&A electrical switch board inspection/WhatsApp Image 2026-06-09 at 13.21.09 (1).jpeg",
       "assets/projectphotos/A&A electrical switch board inspection/WhatsApp Image 2026-06-09 at 13.21.09.jpeg",
@@ -33,10 +18,10 @@ const NOVA_PROJECTS = [
     ]
   },
   {
-    "slug": "aa-fit-out-work",
-    "title": "A&A Fit-out Work",
+    "slug": "aanda-fit-out-work",
+    "title": "A&A fit out work",
     "category": "Fit-out",
-    "description": "MEP coordination for commercial and institutional fit-out projects — services routing, inspections, and handover support.",
+    "description": "MEP engineering and on-site coordination for A&A fit out work — fit-out works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/A&A fit out work/WhatsApp Image 2026-06-09 at 14.35.55 (1).jpeg",
       "assets/projectphotos/A&A fit out work/WhatsApp Image 2026-06-09 at 14.35.55 (2).jpeg",
@@ -48,10 +33,10 @@ const NOVA_PROJECTS = [
     ]
   },
   {
-    "slug": "aa-switch-gears-upgrade",
-    "title": "A&A Switch Gears Upgrade",
+    "slug": "aanda-switch-gears-upgrade",
+    "title": "A&A switch gears upgrade",
     "category": "A&A Works",
-    "description": "Upgrade works for switchgear systems with design review, site coordination, and authority submission support.",
+    "description": "MEP engineering and on-site coordination for A&A switch gears upgrade — a&a works works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/A&A switch gears upgrade/WhatsApp Image 2026-06-09 at 13.18.49.jpeg",
       "assets/projectphotos/A&A switch gears upgrade/WhatsApp Image 2026-06-09 at 13.18.50.jpeg"
@@ -61,7 +46,7 @@ const NOVA_PROJECTS = [
     "slug": "acmv-work",
     "title": "ACMV Work",
     "category": "ACMV",
-    "description": "Air-conditioning and mechanical ventilation works — system coordination, site inspections, and commissioning readiness.",
+    "description": "MEP engineering and on-site coordination for ACMV Work — acmv works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.31.02 (1).jpeg",
       "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.31.02 (2).jpeg",
@@ -72,37 +57,21 @@ const NOVA_PROJECTS = [
       "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.32.06 (3).jpeg",
       "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.32.06 (4).jpeg",
       "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.32.06 (5).jpeg",
-      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.32.06.jpeg"
-    ]
-  },
-  {
-    "slug": "cabling-work",
-    "title": "Cabling Work",
-    "category": "Electrical",
-    "description": "Structured cabling and electrical containment works across commercial and industrial developments.",
-    "images": [
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.44.44.jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.45.43.jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.47.49.jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.48.54 (1).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.48.54.jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.48.55 (1).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.48.55 (2).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.48.55.jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (1).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (2).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (3).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (4).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (5).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25 (6).jpeg",
-      "assets/projectphotos/Cabling work/WhatsApp Image 2026-06-09 at 14.49.25.jpeg"
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.32.06.jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (1).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (2).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (3).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (4).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (5).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37 (6).jpeg",
+      "assets/projectphotos/ACMV Work/WhatsApp Image 2026-06-09 at 14.51.37.jpeg"
     ]
   },
   {
     "slug": "cabling-work-aa",
     "title": "Cabling Work A&A",
     "category": "A&A Works",
-    "description": "Cabling works for addition & alteration projects with MEP coordination and site supervision.",
+    "description": "MEP engineering and on-site coordination for Cabling Work A&A — a&a works works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Cabling work A&A.jpeg"
     ]
@@ -111,16 +80,16 @@ const NOVA_PROJECTS = [
     "slug": "chiller-plant-room",
     "title": "Chiller Plant Room",
     "category": "ACMV",
-    "description": "Chiller plant room MEP works — plant layout coordination, inspections, and commissioning support.",
+    "description": "MEP engineering and on-site coordination for Chiller Plant Room — acmv works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Chiller plant room.jpeg"
     ]
   },
   {
     "slug": "cooling-towers",
-    "title": "Cooling Towers",
+    "title": "Cooling towers",
     "category": "ACMV",
-    "description": "Cooling tower MEP works including installation oversight, performance checks, and integration with central plant systems.",
+    "description": "MEP engineering and on-site coordination for Cooling towers — acmv works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Cooling towers/WhatsApp Image 2026-06-09 at 14.41.37 (1).jpeg",
       "assets/projectphotos/Cooling towers/WhatsApp Image 2026-06-09 at 14.41.37 (2).jpeg",
@@ -130,18 +99,41 @@ const NOVA_PROJECTS = [
   {
     "slug": "dfma",
     "title": "DFMA",
-    "category": "Design & BIM",
-    "description": "Design for Manufacturing and Assembly (DFMA) advisory — buildability review and modular MEP coordination.",
+    "category": "DFMA",
+    "description": "MEP engineering and on-site coordination for DFMA — dfma works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/DFMA/WhatsApp Image 2026-06-09 at 14.12.36.jpeg",
       "assets/projectphotos/DFMA/WhatsApp Image 2026-06-09 at 14.17.52.jpeg"
     ]
   },
   {
-    "slug": "electrical-main-distribution",
-    "title": "Electrical Main Distribution Center",
+    "slug": "electrical-installations",
+    "title": "Electrical Installations",
     "category": "Electrical",
-    "description": "Main switchboard and distribution center works — technical review, site supervision, and testing coordination.",
+    "description": "MEP engineering and on-site coordination for Electrical Installations — electrical works delivered across Singapore with technical compliance and professional oversight.",
+    "images": [
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.44.44.jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.45.43.jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.47.49.jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.48.54 (1).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.48.54.jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.48.55 (1).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.48.55 (2).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.48.55.jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (1).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (2).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (3).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (4).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (5).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25 (6).jpeg",
+      "assets/projectphotos/Electrical Installtions/WhatsApp Image 2026-06-09 at 14.49.25.jpeg"
+    ]
+  },
+  {
+    "slug": "electrical-main-distribution-center",
+    "title": "Electrical main distribution center",
+    "category": "Electrical",
+    "description": "MEP engineering and on-site coordination for Electrical main distribution center — electrical works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Electrical main distribution center/WhatsApp Image 2026-06-09 at 14.40.18 (1).jpeg",
       "assets/projectphotos/Electrical main distribution center/WhatsApp Image 2026-06-09 at 14.40.18 (2).jpeg",
@@ -151,19 +143,19 @@ const NOVA_PROJECTS = [
   },
   {
     "slug": "electrical-provision-work",
-    "title": "Electrical Provision Work",
+    "title": "Electrical provision work",
     "category": "Electrical",
-    "description": "Electrical provision and infrastructure works for new and upgrading developments.",
+    "description": "MEP engineering and on-site coordination for Electrical provision work — electrical works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Electrical provision work/WhatsApp Image 2026-06-09 at 14.08.48 (1).jpeg",
       "assets/projectphotos/Electrical provision work/WhatsApp Image 2026-06-09 at 14.08.48.jpeg"
     ]
   },
   {
-    "slug": "gen-set-testing",
+    "slug": "generator-set-testing",
     "title": "Generator Set Testing",
-    "category": "Testing & Commissioning",
-    "description": "Generator set testing and commissioning — structured T&C procedures and performance verification.",
+    "category": "Electrical",
+    "description": "MEP engineering and on-site coordination for Generator Set Testing — electrical works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Gen set testing/WhatsApp Image 2026-06-09 at 13.30.50 (1).jpeg",
       "assets/projectphotos/Gen set testing/WhatsApp Image 2026-06-09 at 13.30.50.jpeg",
@@ -173,10 +165,10 @@ const NOVA_PROJECTS = [
     ]
   },
   {
-    "slug": "me-transformer-room-inspection",
+    "slug": "mande-inspection-electrical-transformer-room",
     "title": "M&E Inspection — Electrical Transformer Room",
-    "category": "M&E Inspection",
-    "description": "M&E inspection of electrical transformer rooms for safety, compliance, and operational readiness.",
+    "category": "Inspection",
+    "description": "MEP engineering and on-site coordination for M&E Inspection — Electrical Transformer Room — inspection works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/M&E inspection Electrical Transformer room/WhatsApp Image 2026-06-09 at 14.06.20 (1).jpeg",
       "assets/projectphotos/M&E inspection Electrical Transformer room/WhatsApp Image 2026-06-09 at 14.06.20 (2).jpeg",
@@ -187,7 +179,7 @@ const NOVA_PROJECTS = [
     "slug": "plumbing",
     "title": "Plumbing",
     "category": "Plumbing",
-    "description": "Plumbing and sanitary works coordination for commercial and residential projects.",
+    "description": "MEP engineering and on-site coordination for Plumbing — plumbing works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Plumbing/WhatsApp Image 2026-06-09 at 14.41.06 (1).jpeg",
       "assets/projectphotos/Plumbing/WhatsApp Image 2026-06-09 at 14.41.06.jpeg"
@@ -196,21 +188,20 @@ const NOVA_PROJECTS = [
   {
     "slug": "server-room-elv",
     "title": "Server Room ELV Works",
-    "category": "ELV & Data Centre",
-    "description": "Extra-low voltage and server room MEP works for data centre and critical facility environments.",
+    "category": "ELV",
+    "description": "MEP engineering and on-site coordination for Server Room ELV Works — elv works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Server room ELV works.jpeg"
     ]
   },
   {
     "slug": "underground-pipe-work",
-    "title": "Underground Pipe Work",
+    "title": "Underground pipe work",
     "category": "Plumbing",
-    "description": "Underground piping infrastructure — layout review, site coordination, and compliance with PUB requirements.",
+    "description": "MEP engineering and on-site coordination for Underground pipe work — plumbing works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/Underground pipe work/WhatsApp Image 2026-06-09 at 14.43.29 (1).jpeg",
       "assets/projectphotos/Underground pipe work/WhatsApp Image 2026-06-09 at 14.43.29.jpeg"
     ]
   }
 ];
-

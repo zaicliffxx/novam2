@@ -6,11 +6,11 @@
 
   const featured = [
     "acmv-work",
-    "66-kv-switch-gear",
-    "gen-set-testing",
-    "aa-fit-out-work",
+    "electrical-installations",
+    "generator-set-testing",
+    "aanda-fit-out-work",
     "server-room-elv",
-    "electrical-main-distribution",
+    "electrical-main-distribution-center",
   ]
     .map((slug) => NOVA_PROJECTS.find((p) => p.slug === slug))
     .filter(Boolean);

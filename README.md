@@ -15,7 +15,11 @@ Multi-page site for **NOVA M2 PTE LTD** — Singapore MEP Engineering Consultanc
 
 ## Project photos
 
-Photos live in `assets/projectphotos/`. Metadata is in `assets/js/projects-data.js` (regenerate with Node if folders change).
+Photos live in `assets/projectphotos/`. Metadata is in `assets/js/projects-data.js`. After renaming or adding folders:
+
+```bash
+node scripts/generate-projects.js
+```
 
 ## Local preview
 
