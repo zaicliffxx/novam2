@@ -2,7 +2,8 @@
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
   const header = document.getElementById("site-header");
-  const links = nav?.querySelectorAll("a") ?? [];
+  const navLinks = nav?.querySelectorAll("a[data-nav]") ?? [];
+  const sections = document.querySelectorAll(".page-section[id]");
 
   function closeNav() {
     nav?.classList.remove("is-open");
@@ -18,30 +19,49 @@
     document.body.classList.toggle("nav-open", open);
   });
 
-  links.forEach((link) => {
-    link.addEventListener("click", () => closeNav());
-  });
+  navLinks.forEach((link) => link.addEventListener("click", () => closeNav()));
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeNav();
   });
 
-  /* Header: solid background after scrolling past hero */
+  /* Header: solid on scroll past home */
   function updateHeader() {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 60);
+    const scrolled = window.scrollY > 48;
+    header.classList.toggle("is-scrolled", scrolled);
   }
 
   window.addEventListener("scroll", updateHeader, { passive: true });
   updateHeader();
 
-  /* Stats counter animation (LSK-style achievement overview) */
+  /* Active nav for current section */
+  function updateActiveNav() {
+    const offset = header?.offsetHeight ?? 72;
+    let current = "home";
+
+    sections.forEach((section) => {
+      const top = section.offsetTop - offset - 40;
+      if (window.scrollY >= top) {
+        current = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.toggle("is-active", link.dataset.nav === current);
+    });
+  }
+
+  window.addEventListener("scroll", updateActiveNav, { passive: true });
+  updateActiveNav();
+
+  /* Stats counter */
   const statNums = document.querySelectorAll(".stat-num[data-count]");
   if (statNums.length && "IntersectionObserver" in window) {
     const animateCount = (el) => {
       const target = parseInt(el.dataset.count, 10);
       if (Number.isNaN(target)) return;
-      const duration = 1400;
+      const duration = 1200;
       const start = performance.now();
 
       function tick(now) {
@@ -63,7 +83,7 @@
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
 
     statNums.forEach((el) => observer.observe(el));

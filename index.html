@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NOVA M2 PTE LTD — Singapore MEP Engineering Consultancy and Project Management for commercial, industrial, institutional and residential developments." />
+  <meta name="description" content="NOVA M2 PTE LTD — Singapore MEP Engineering Consultancy and Project Management." />
   <title>Nova M2 | MEP Engineering & Project Management</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
 </head>
@@ -16,305 +16,230 @@
 
   <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a class="logo" href="#top" aria-label="Nova M2 home">
-        <img src="assets/images/logo.svg" alt="" width="36" height="36" />
+      <a class="logo" href="#home" aria-label="Nova M2 — Home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34" />
         <span class="logo-text">Nova M2</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#about">Who we are</a>
-        <a href="#services">What we do</a>
-        <a href="#team">Our team</a>
-        <a href="#contact">Contact Us</a>
-        <a class="btn btn-nav" href="#consultation">Book Consultation</a>
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#about" data-nav="about">About Us</a>
+        <a href="#services" data-nav="services">Services</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#contact" data-nav="contact">Contact Us</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <p class="hero-company">NOVA M2 PTE LTD</p>
-        <h1 id="hero-title">Engineering excellence</h1>
-        <p class="hero-tagline">Integrated MEP solutions for complex building challenges across Singapore.</p>
-        <div class="hero-actions">
-          <a class="btn btn-light" href="#about">Who we are</a>
-          <a class="btn btn-outline-light" href="#services">Our services</a>
-        </div>
-      </div>
-      <a class="hero-scroll" href="#about" aria-label="Scroll to about section">
-        <span>Scroll</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      </a>
-    </section>
-
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="container about-layout">
-        <header class="section-intro">
-          <p class="section-label">Who we are</p>
-          <h2 id="about-title">Your trusted MEP engineering partner</h2>
-        </header>
-        <div class="about-content">
-          <p><strong>NOVA M2 PTE LTD</strong> is a Singapore-based MEP Engineering Consultancy and Project Management company, providing professional services for commercial, industrial, institutional and residential developments.</p>
-          <p>Led by a highly experienced team with over 30 years of combined industry experience, we deliver end-to-end MEP solutions covering design coordination, BIM, construction management, authority submissions, testing &amp; commissioning, and project handover.</p>
-          <a class="text-link" href="#team">Meet our leadership &rarr;</a>
+    <!-- 1. Home -->
+    <section class="page-section home" id="home" aria-labelledby="home-title">
+      <div class="home-bg" aria-hidden="true"></div>
+      <div class="container home-inner">
+        <p class="home-eyebrow">NOVA M2 PTE LTD</p>
+        <h1 id="home-title">MEP engineering &amp; project management</h1>
+        <p class="home-lead">Singapore-based consultancy delivering integrated mechanical, electrical and plumbing solutions for commercial, industrial, institutional and residential developments.</p>
+        <div class="home-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-outline" href="#services">View services</a>
         </div>
       </div>
     </section>
 
-    <section class="stats" aria-label="Achievement overview">
-      <div class="container stats-grid">
-        <article class="stat-item">
-          <p class="stat-value"><span class="stat-num" data-count="30">0</span>+</p>
-          <p class="stat-label">Years combined experience</p>
-        </article>
-        <article class="stat-item">
-          <p class="stat-value"><span class="stat-num" data-count="8">0</span></p>
-          <p class="stat-label">Core MEP service areas</p>
-        </article>
-        <article class="stat-item">
-          <p class="stat-value"><span class="stat-num" data-count="4">0</span></p>
-          <p class="stat-label">Development sectors served</p>
-        </article>
-        <article class="stat-item">
-          <p class="stat-value">SG</p>
-          <p class="stat-label">Singapore-based consultancy</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section services" id="services" aria-labelledby="services-title">
+    <!-- 2. About Us -->
+    <section class="page-section about" id="about" aria-labelledby="about-title">
       <div class="container">
-        <header class="section-intro section-intro--center">
-          <p class="section-label">What we do</p>
-          <h2 id="services-title">Our services</h2>
-          <p class="section-desc">End-to-end MEP engineering, BIM coordination, and project management for developments of every scale.</p>
-        </header>
-        <ul class="service-grid">
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>MEP Project Management &amp; Coordination</h3>
-              <p>End-to-end management of Mechanical, Electrical and Plumbing works, ensuring seamless coordination between consultants, contractors and stakeholders.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>Design Review, Value Engineering &amp; Buildability</h3>
-              <p>Comprehensive design evaluation to enhance efficiency, reduce cost, improve constructability, and ensure regulatory compliance.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>Authority Submissions &amp; Regulatory Coordination</h3>
-              <p>Submissions to BCA, SCDF, PUB, SP Group, NEA, URA — ensuring full compliance with statutory regulations and approval processes.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>Testing &amp; Commissioning Management</h3>
-              <p>Structured planning and supervision of T&amp;C activities to verify system performance, reliability, and operational readiness.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>TOP, CSC &amp; Final Handover Documentation</h3>
-              <p>Coordination and preparation of documentation for TOP, Certificate of Statutory Completion (CSC), and final project handover.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>BIM Coordination &amp; 3D MEP Modelling</h3>
-              <p>Advanced BIM implementation including 3D modelling, interdisciplinary coordination, and clash detection to minimize site conflicts.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>Construction, Shop &amp; As-Built Drawings</h3>
-              <p>Development and review of detailed construction drawings, shop drawings, and accurate as-built documentation.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-          <li class="service-card">
-            <div class="service-card-top" aria-hidden="true">
-              <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></span>
-            </div>
-            <div class="service-card-body">
-              <h3>O&amp;M Manuals and BIM Documentation</h3>
-              <p>Comprehensive Operation &amp; Maintenance manuals and BIM documentation for long-term facility management.</p>
-              <a class="service-link" href="#consultation">View more</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section why-us" id="why-us" aria-labelledby="why-title">
-      <div class="container">
-        <header class="section-intro section-intro--center">
-          <p class="section-label">Why choose us</p>
-          <h2 id="why-title">Built on expertise, driven by results</h2>
-          <p class="section-desc">We combine technical leadership, regulatory compliance, and collaborative delivery to bring your projects from concept to completion.</p>
-        </header>
-        <ul class="why-grid">
-          <li class="why-card">
-            <span class="why-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </span>
-            <h3>Regulatory compliance</h3>
-            <p>Full alignment with Singapore authority requirements — BCA, SCDF, PUB, NEA, URA — from submission through approval.</p>
-          </li>
-          <li class="why-card">
-            <span class="why-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </span>
-            <h3>Technical leadership</h3>
-            <p>Over 30 years of combined MEP experience across commercial, industrial, institutional and residential developments.</p>
-          </li>
-          <li class="why-card">
-            <span class="why-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </span>
-            <h3>Collaborative delivery</h3>
-            <p>Seamless coordination between consultants, contractors and stakeholders for timely, quality project outcomes.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section team" id="team" aria-labelledby="team-title">
-      <div class="container">
-        <header class="section-intro">
-          <p class="section-label">Our team</p>
-          <h2 id="team-title">Mr. Patrick</h2>
-          <p class="section-desc">Personal experiences across diverse sectors in Singapore and beyond.</p>
-        </header>
-        <ul class="experience-grid">
-          <li>School Constructions</li>
-          <li>Health Center Constructions</li>
-          <li>Community Hospital Constructions</li>
-          <li>Aviation Constructions</li>
-          <li>Condominium Constructions</li>
-          <li>HDB Constructions</li>
-          <li>Research Center Constructions</li>
-          <li>Data Center Constructions</li>
-          <li>Fit-out works and Additional &amp; Alternation Building upgrading works</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="cta-band" aria-label="Enquiry call to action">
-      <div class="container cta-band-inner">
-        <div>
-          <p class="section-label section-label--light">Get started</p>
-          <h2>Talk to us for further enquiries</h2>
-        </div>
-        <a class="btn btn-light" href="#consultation">Contact us today</a>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-body">
-        <header class="contact-connect-header">
-          <p class="section-label">Contact</p>
-          <h2 id="contact-title">Singapore office</h2>
+        <header class="section-head">
+          <h2 id="about-title">About Us</h2>
+          <p class="section-lead">Your trusted partner for compliant, efficient, and future-ready building solutions.</p>
         </header>
 
-        <div class="contact-grid">
-          <div class="contact-info">
-            <article class="contact-card">
-              <span class="contact-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              </span>
-              <h4>Email</h4>
-              <a class="contact-card-link" href="mailto:sales@novam2.com">sales@novam2.com</a>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p><strong>NOVA M2 PTE LTD</strong> is a Singapore-based MEP Engineering Consultancy and Project Management company. Led by a highly experienced team with over 30 years of combined industry experience, we deliver end-to-end MEP solutions covering design coordination, BIM, construction management, authority submissions, testing &amp; commissioning, and project handover.</p>
+          </div>
+          <div class="about-values">
+            <article class="value-card">
+              <h3>Vision</h3>
+              <p>To be a trusted MEP engineering partner delivering compliant, efficient, and future-ready building solutions.</p>
             </article>
-
-            <article class="contact-card">
-              <span class="contact-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              </span>
-              <h4>Phone &amp; WhatsApp</h4>
-              <a class="contact-card-link" href="tel:+6590275317">+65 9027 5317</a>
-              <a class="contact-card-link contact-card-link-secondary" href="https://wa.me/6590275317" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+            <article class="value-card">
+              <h3>Mission</h3>
+              <p>To provide high-quality MEP engineering, BIM, and project management through strong technical leadership, regulatory compliance, and collaborative delivery.</p>
             </article>
+          </div>
+        </div>
 
-            <article class="contact-card">
-              <span class="contact-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              </span>
-              <h4>Address</h4>
-              <address class="contact-card-address">
+        <div class="stats-bar" aria-label="Company overview">
+          <div class="stat">
+            <p class="stat-value"><span class="stat-num" data-count="30">0</span>+</p>
+            <p class="stat-label">Years combined experience</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value"><span class="stat-num" data-count="8">0</span></p>
+            <p class="stat-label">Core service areas</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value"><span class="stat-num" data-count="4">0</span></p>
+            <p class="stat-label">Development sectors</p>
+          </div>
+        </div>
+
+        <div class="team-block">
+          <h3 class="team-name">Mr. Patrick</h3>
+          <p class="team-role">Leadership &amp; technical direction</p>
+          <p class="team-bio">Extensive hands-on experience across schools, healthcare, aviation, residential, research, data centre and fit-out projects throughout Singapore.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services -->
+    <section class="page-section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2 id="services-title">Services</h2>
+          <p class="section-lead">Construction redefined — comprehensive MEP consultancy from design through handover.</p>
+        </header>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3>MEP Project Management &amp; Coordination</h3>
+            <p>End-to-end management of Mechanical, Electrical and Plumbing works, ensuring seamless coordination between consultants, contractors and stakeholders for timely project delivery.</p>
+          </li>
+          <li class="service-item">
+            <h3>MEP Design Review, Value Engineering &amp; Buildability Advisory</h3>
+            <p>Comprehensive design evaluation to enhance efficiency, reduce cost, improve constructability, and ensure compliance with project and regulatory requirements.</p>
+          </li>
+          <li class="service-item">
+            <h3>Authority Submissions &amp; Regulatory Coordination</h3>
+            <p>Preparation and management of submissions to BCA, SCDF, PUB, SP Group, NEA, URA — ensuring full compliance with statutory regulations and approval processes.</p>
+          </li>
+          <li class="service-item">
+            <h3>Testing &amp; Commissioning (T&amp;C) Management</h3>
+            <p>Structured planning and supervision of testing and commissioning activities to verify system performance, reliability, and operational readiness.</p>
+          </li>
+          <li class="service-item">
+            <h3>TOP, CSC &amp; Final Handover Documentation</h3>
+            <p>Coordination and preparation of documentation required for Temporary Occupation Permit (TOP), Certificate of Statutory Completion (CSC), and final project handover.</p>
+          </li>
+          <li class="service-item">
+            <h3>BIM Coordination, 3D MEP Modelling &amp; Clash Detection</h3>
+            <p>Advanced BIM implementation including 3D modelling, interdisciplinary coordination, and clash detection to minimize site conflicts and rework.</p>
+          </li>
+          <li class="service-item">
+            <h3>Construction, Shop &amp; As-Built Drawings</h3>
+            <p>Development and review of detailed construction drawings, shop drawings, and accurate as-built documentation reflecting final site conditions.</p>
+          </li>
+          <li class="service-item">
+            <h3>O&amp;M Manuals and BIM Documentation</h3>
+            <p>Compilation of comprehensive Operation &amp; Maintenance manuals and BIM documentation to support long-term facility management and asset lifecycle performance.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section class="page-section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-lead">Representative sectors and project types delivered by our team across Singapore.</p>
+        </header>
+        <ul class="project-grid">
+          <li class="project-card">
+            <span class="project-num">01</span>
+            <h3>Education &amp; Institutional</h3>
+            <p>School constructions and research centre developments with full MEP coordination and authority submissions.</p>
+          </li>
+          <li class="project-card">
+            <span class="project-num">02</span>
+            <h3>Healthcare</h3>
+            <p>Health centre and community hospital projects requiring stringent compliance and commissioning oversight.</p>
+          </li>
+          <li class="project-card">
+            <span class="project-num">03</span>
+            <h3>Aviation &amp; Infrastructure</h3>
+            <p>Aviation-related constructions with complex MEP systems and multi-stakeholder coordination.</p>
+          </li>
+          <li class="project-card">
+            <span class="project-num">04</span>
+            <h3>Residential</h3>
+            <p>Condominium and HDB developments — design review, BIM coordination, and handover documentation.</p>
+          </li>
+          <li class="project-card">
+            <span class="project-num">05</span>
+            <h3>Data Centres</h3>
+            <p>Critical MEP infrastructure with rigorous testing, commissioning, and as-built documentation.</p>
+          </li>
+          <li class="project-card">
+            <span class="project-num">06</span>
+            <h3>Fit-out &amp; A&amp;A Works</h3>
+            <p>Fit-out works and additional &amp; alteration building upgrading projects across commercial and institutional spaces.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Contact Us -->
+    <section class="page-section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="contact-title">Contact Us</h2>
+          <p class="section-lead">Talk to us for project enquiries and consultations. We respond promptly to every message.</p>
+        </header>
+
+        <div class="contact-layout">
+          <div class="contact-details">
+            <div class="contact-row">
+              <h3>Email</h3>
+              <a href="mailto:sales@novam2.com">sales@novam2.com</a>
+            </div>
+            <div class="contact-row">
+              <h3>Phone</h3>
+              <a href="tel:+6590275317">+65 9027 5317</a>
+              <a class="contact-sub" href="https://wa.me/6590275317" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+            <div class="contact-row">
+              <h3>Office</h3>
+              <address>
                 NOVA M2 PTE LTD<br />
                 City Hall, Peninsula Plaza<br />
                 Singapore 179098
               </address>
-              <a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&amp;query=Peninsula+Plaza+Singapore+179098" target="_blank" rel="noopener noreferrer">Get directions</a>
-            </article>
-
-            <p class="contact-privacy">We respect your right to privacy and are committed to safeguarding the personal information you share with us.</p>
+              <a class="contact-sub" href="https://www.google.com/maps/search/?api=1&amp;query=Peninsula+Plaza+Singapore+179098" target="_blank" rel="noopener noreferrer">Get directions</a>
+            </div>
+            <p class="contact-note">We respect your privacy and safeguard the personal information you share with us.</p>
           </div>
 
-          <div class="contact-form-panel" id="consultation" aria-labelledby="consultation-title">
-            <h3 id="consultation-title">Send us a message</h3>
-            <form class="consult-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="consultation" />
-              <p class="hidden" aria-hidden="true">
-                <label>Don't fill this out: <input name="bot-field" /></label>
-              </p>
-              <div class="form-row">
-                <label for="name">Full name</label>
-                <input id="name" name="name" type="text" required autocomplete="name" />
-              </div>
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required autocomplete="email" />
-              </div>
-              <div class="form-row">
-                <label for="phone">Phone number</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" />
-              </div>
-              <div class="form-row">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-              <button class="btn btn-primary btn-full" type="submit">Send</button>
-            </form>
-          </div>
+          <form class="contact-form" name="consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="consultation" />
+            <p class="hidden" aria-hidden="true">
+              <label>Don't fill this out: <input name="bot-field" /></label>
+            </p>
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" type="submit">Send message</button>
+          </form>
         </div>
 
         <div class="contact-map">
           <iframe
-            title="Nova M2 office location — Peninsula Plaza, Singapore"
+            title="Nova M2 — Peninsula Plaza, Singapore"
             src="https://maps.google.com/maps?q=Peninsula+Plaza+Singapore+179098&amp;z=15&amp;output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -327,30 +252,17 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="logo logo-footer" href="#top">
-          <img src="assets/images/logo.svg" alt="" width="32" height="32" />
-          <span class="logo-text">Nova M2</span>
-        </a>
-        <p class="footer-tagline">MEP engineering consultancy &amp; project management.</p>
-      </div>
+      <a class="logo logo-footer" href="#home">
+        <img src="assets/images/logo.svg" alt="" width="28" height="28" />
+        <span class="logo-text">Nova M2</span>
+      </a>
       <nav class="footer-nav" aria-label="Footer">
-        <h4>Quick links</h4>
-        <a href="#about">Who we are</a>
-        <a href="#services">What we do</a>
-        <a href="#team">Our team</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact Us</a>
       </nav>
-      <div class="footer-contact">
-        <h4>Singapore</h4>
-        <a href="tel:+6590275317">+65 9027 5317</a>
-        <a href="mailto:sales@novam2.com">sales@novam2.com</a>
-        <address>
-          NOVA M2 PTE LTD<br />
-          City Hall, Peninsula Plaza<br />
-          Singapore 179098
-        </address>
-      </div>
       <p class="copyright">&copy; 2026 Nova M2. All rights reserved.</p>
     </div>
   </footer>
