@@ -16,22 +16,17 @@
   --container: min(1080px, 90vw);
   --section-pad: clamp(4rem, 8vw, 6rem);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  /* Blueprint grid — light sections */
-  --bp-line: rgba(42, 78, 115, 0.055);
-  --bp-line-major: rgba(42, 78, 115, 0.085);
-  --bp-grid: linear-gradient(var(--bp-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bp-line) 1px, transparent 1px),
-    linear-gradient(var(--bp-line-major) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bp-line-major) 1px, transparent 1px);
-  --bp-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
-  /* Blueprint grid — dark hero */
-  --bp-line-dark: rgba(255, 255, 255, 0.035);
-  --bp-line-major-dark: rgba(255, 255, 255, 0.065);
-  --bp-grid-dark: linear-gradient(var(--bp-line-dark) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bp-line-dark) 1px, transparent 1px),
-    linear-gradient(var(--bp-line-major-dark) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bp-line-major-dark) 1px, transparent 1px);
-  --bp-size-dark: 24px 24px, 24px 24px, 96px 96px, 96px 96px;
+  /* Soft abstract washes — no repeating grid */
+  --wash-light:
+    radial-gradient(ellipse 90% 65% at 8% 12%, rgba(42, 78, 115, 0.035) 0%, transparent 58%),
+    radial-gradient(ellipse 75% 55% at 92% 88%, rgba(139, 115, 85, 0.025) 0%, transparent 52%),
+    linear-gradient(118deg, transparent 55%, rgba(42, 78, 115, 0.012) 56.5%, transparent 58%),
+    linear-gradient(41deg, transparent 68%, rgba(42, 78, 115, 0.01) 69.5%, transparent 71%);
+  --wash-dark:
+    radial-gradient(ellipse 65% 50% at 88% 82%, rgba(110, 150, 185, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 6% 18%, rgba(196, 168, 130, 0.04) 0%, transparent 48%),
+    linear-gradient(132deg, transparent 62%, rgba(255, 255, 255, 0.014) 63.2%, transparent 64.5%),
+    linear-gradient(48deg, transparent 34%, rgba(255, 255, 255, 0.01) 35.2%, transparent 36.5%);
 }
 
 *,
@@ -52,8 +47,6 @@ body {
   line-height: 1.65;
   color: var(--text);
   background-color: var(--bg);
-  background-image: var(--bp-grid);
-  background-size: var(--bp-size);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -237,17 +230,59 @@ a {
   padding: var(--section-pad) 0;
 }
 
-/* Subtle blueprint grid on content sections */
+/* Soft abstract background — organic washes, not a tiled grid */
 .page-section:not(.home)::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: var(--bp-grid);
-  background-size: var(--bp-size);
-  opacity: 0.85;
-  mask-image: linear-gradient(180deg, black 0%, black 85%, transparent 100%);
+  background-image: var(--wash-light);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.55;
+}
+
+.page-section:not(.home)::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(72px);
+  opacity: 0.45;
+}
+
+.about::after {
+  width: min(50vw, 420px);
+  height: min(50vw, 420px);
+  top: -8%;
+  right: -12%;
+  background: rgba(42, 78, 115, 0.06);
+}
+
+.services::after {
+  width: min(45vw, 380px);
+  height: min(45vw, 380px);
+  bottom: -10%;
+  left: -14%;
+  background: rgba(139, 115, 85, 0.05);
+}
+
+.projects::after {
+  width: min(40vw, 340px);
+  height: min(40vw, 340px);
+  top: 20%;
+  left: -10%;
+  background: rgba(42, 78, 115, 0.045);
+}
+
+.contact::after {
+  width: min(48vw, 400px);
+  height: min(48vw, 400px);
+  bottom: 5%;
+  right: -8%;
+  background: rgba(42, 78, 115, 0.04);
 }
 
 .page-section > .container {
@@ -297,12 +332,25 @@ a {
 .home-bg {
   position: absolute;
   inset: 0;
-  background-color: #1a2838;
+  background-color: #1a2332;
   background-image:
-    var(--bp-grid-dark),
-    radial-gradient(ellipse 90% 70% at 70% 80%, rgba(90, 130, 165, 0.12) 0%, transparent 55%),
-    linear-gradient(165deg, #1a2332 0%, #1e2d3d 45%, #1a2332 100%);
-  background-size: var(--bp-size-dark), auto, auto;
+    var(--wash-dark),
+    linear-gradient(168deg, #1a2332 0%, #1c2a38 50%, #1a2332 100%);
+  background-size: 100% 100%, auto;
+  background-repeat: no-repeat;
+}
+
+.home-bg::after {
+  content: "";
+  position: absolute;
+  width: min(70vw, 560px);
+  height: min(70vw, 560px);
+  bottom: -25%;
+  right: -15%;
+  border-radius: 50%;
+  background: rgba(90, 130, 165, 0.09);
+  filter: blur(90px);
+  pointer-events: none;
 }
 
 .home-inner {
@@ -344,7 +392,7 @@ a {
 
 /* 2. About */
 .about {
-  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+  background: linear-gradient(180deg, #fcfcfd 0%, #f8f9fa 100%);
 }
 
 .about-grid {
@@ -464,11 +512,7 @@ a {
 
 /* 3. Services */
 .services {
-  background: linear-gradient(180deg, var(--bg) 0%, #f3f5f7 100%);
-}
-
-.services::before {
-  opacity: 1;
+  background: linear-gradient(180deg, #f6f7f9 0%, #f3f5f7 100%);
 }
 
 .service-list {
@@ -511,7 +555,7 @@ a {
 
 /* 4. Projects */
 .projects {
-  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  background: linear-gradient(180deg, #fcfcfd 0%, #f9fafb 100%);
 }
 
 .project-grid {
@@ -561,13 +605,8 @@ a {
 
 /* 5. Contact */
 .contact {
-  background: linear-gradient(180deg, var(--bg) 0%, #f0f2f5 100%);
+  background: linear-gradient(180deg, #f6f7f9 0%, #f0f2f5 100%);
   border-top: 1px solid var(--border);
-}
-
-.contact::before {
-  opacity: 1;
-  mask-image: none;
 }
 
 .contact-layout {
@@ -695,8 +734,9 @@ a {
   position: relative;
   padding: 2rem 0;
   background-color: var(--bg-dark);
-  background-image: var(--bp-grid-dark);
-  background-size: var(--bp-size-dark);
+  background-image: var(--wash-dark);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: rgba(238, 240, 243, 0.65);
 }
 
