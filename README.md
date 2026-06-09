@@ -1,23 +1,30 @@
 # Nova M2
 
-Minimalist landing page for **NOVA M2 PTE LTD** — Singapore MEP Engineering Consultancy and Project Management.
+Multi-page site for **NOVA M2 PTE LTD** — Singapore MEP Engineering Consultancy and Project Management.
+
+## Pages
+
+| Page | File |
+|------|------|
+| Home | `index.html` |
+| About Us | `about.html` |
+| Services | `services.html` |
+| Projects | `projects.html` |
+| Project detail | `project.html?slug=…` |
+| Contact Us | `contact.html` |
+
+## Project photos
+
+Photos live in `assets/projectphotos/`. Metadata is in `assets/js/projects-data.js` (regenerate with Node if folders change).
 
 ## Local preview
-
-Open `index.html` in a browser, or run a simple server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit http://localhost:8080
-
 ## Deploy
 
-Static site — publish directory is the repo root (`.`). Netlify deploys automatically on push to `main`.
+Static site — publish directory is `.` (root). Netlify deploys on push to `main`.
 
-## Contact form
-
-The consultation form uses [Netlify Forms](https://docs.netlify.com/forms/setup/). After linking the site in Netlify, enable form notifications in **Site configuration → Forms**.
-
-Enquiries: **sales@novam2.com** (contact links in `index.html`). In Netlify, set **Forms → Form notifications** to the same address for consultation submissions.
+Enquiries: **sales@novam2.com**. Set Netlify **Forms → notifications** to the same address.

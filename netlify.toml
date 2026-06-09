@@ -1,6 +1,11 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/project/:slug"
+  to = "/project.html?slug=:slug"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
