@@ -37,6 +37,7 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span>
           <a href="projects.html">Projects</a><span>/</span>
+          <a href="projects.html?category=${encodeURIComponent(project.category)}">${project.category}</a><span>/</span>
           <span>${project.title}</span>
         </nav>
         <p class="page-banner-label">${project.category}</p>
@@ -46,6 +47,6 @@
     <div class="container page-content">
       <p class="project-desc">${project.description}</p>
       <div class="project-gallery" aria-label="Project photos">${gallery}</div>
-      <p class="project-back"><a href="projects.html">&larr; All projects</a></p>
+      <p class="project-back"><a href="projects.html?category=${encodeURIComponent(project.category)}">&larr; ${project.category}</a></p>
     </div>`;
 })();

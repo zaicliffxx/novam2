@@ -9,7 +9,7 @@
     "electrical-installations",
     "generator-set-testing",
     "aanda-fit-out-work",
-    "server-room-elv",
+    "chiller-plant-room",
     "electrical-main-distribution-center",
   ]
     .map((slug) => NOVA_PROJECTS.find((p) => p.slug === slug))

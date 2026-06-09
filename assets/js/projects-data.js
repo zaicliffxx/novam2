@@ -186,15 +186,6 @@ const NOVA_PROJECTS = [
     ]
   },
   {
-    "slug": "server-room-elv",
-    "title": "Server Room ELV Works",
-    "category": "ELV",
-    "description": "MEP engineering and on-site coordination for Server Room ELV Works — elv works delivered across Singapore with technical compliance and professional oversight.",
-    "images": [
-      "assets/projectphotos/Server room ELV works.jpeg"
-    ]
-  },
-  {
     "slug": "underground-pipe-work",
     "title": "Underground pipe work",
     "category": "Plumbing",

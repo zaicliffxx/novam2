@@ -18,7 +18,6 @@ const TITLE_MAP = {
   "Gen set testing": "Generator Set Testing",
   "Cabling work A&A": "Cabling Work A&A",
   "Chiller plant room": "Chiller Plant Room",
-  "Server room ELV works": "Server Room ELV Works",
   "M&E inspection Electrical Transformer room":
     "M&E Inspection — Electrical Transformer Room",
 };
@@ -29,7 +28,6 @@ const SLUG_MAP = {
   "A&A switch gears upgrade": "aanda-switch-gears-upgrade",
   "Gen set testing": "generator-set-testing",
   "Cabling work A&A": "cabling-work-aa",
-  "Server room ELV works": "server-room-elv",
   "Chiller plant room": "chiller-plant-room",
 };
 
@@ -48,7 +46,6 @@ const CATEGORY_MAP = {
   "Gen set testing": "Electrical",
   "M&E inspection Electrical Transformer room": "Inspection",
   "Plumbing": "Plumbing",
-  "Server room ELV works": "ELV",
   "Underground pipe work": "Plumbing",
 };
 

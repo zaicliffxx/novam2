@@ -32,18 +32,21 @@
     <div class="page-banner">
       <div class="container">
         <p class="page-banner-label">Our works</p>
-        <h1>All Projects</h1>
-        <p class="page-banner-lead">A selection of MEP engineering and coordination works delivered across Singapore.</p>
+        <h1>Projects</h1>
+        <p class="page-banner-lead">Select a category to browse our MEP engineering portfolio.</p>
       </div>
     </div>
 
     <section class="page-content">
       <div class="container">
-        <div class="projects-toolbar">
-          <p class="projects-count" id="projects-count"></p>
-          <div class="project-filters" id="project-filters" role="tablist" aria-label="Filter projects by category"></div>
+        <div class="category-grid" id="category-grid" aria-label="Project categories"></div>
+        <div id="projects-list-view" hidden>
+          <div class="projects-toolbar">
+            <a class="text-link projects-back" href="projects.html">&larr; All categories</a>
+            <p class="projects-count" id="projects-count"></p>
+          </div>
+          <div class="project-grid" id="projects-grid"></div>
         </div>
-        <div class="project-grid" id="projects-grid"></div>
       </div>
     </section>
   </main>
