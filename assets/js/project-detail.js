@@ -25,7 +25,9 @@
   const gallery = project.images
     .map(
       (img, i) =>
-        `<figure class="gallery-item"><img src="${window.encodeAssetPath(img)}" alt="${project.title} — photo ${i + 1}" loading="${i < 4 ? "eager" : "lazy"}" /></figure>`
+        `<button type="button" class="gallery-item" aria-label="View photo ${i + 1} of ${project.images.length}">
+          <img src="${window.encodeAssetPath(img)}" alt="${project.title} — photo ${i + 1}" loading="${i < 4 ? "eager" : "lazy"}" />
+        </button>`
     )
     .join("");
 
