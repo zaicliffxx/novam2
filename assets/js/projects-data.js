@@ -171,7 +171,6 @@ const NOVA_PROJECTS = [
     "description": "MEP engineering and on-site coordination for M&E Inspection — Electrical Transformer Room — inspection works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
       "assets/projectphotos/M&E inspection Electrical Transformer room/WhatsApp Image 2026-06-09 at 14.06.20 (1).jpeg",
-      "assets/projectphotos/M&E inspection Electrical Transformer room/WhatsApp Image 2026-06-09 at 14.06.20 (2).jpeg",
       "assets/projectphotos/M&E inspection Electrical Transformer room/WhatsApp Image 2026-06-09 at 14.06.20.jpeg"
     ]
   },
@@ -181,8 +180,7 @@ const NOVA_PROJECTS = [
     "category": "Plumbing",
     "description": "MEP engineering and on-site coordination for Plumbing — plumbing works delivered across Singapore with technical compliance and professional oversight.",
     "images": [
-      "assets/projectphotos/Plumbing/WhatsApp Image 2026-06-09 at 14.41.06 (1).jpeg",
-      "assets/projectphotos/Plumbing/WhatsApp Image 2026-06-09 at 14.41.06.jpeg"
+      "assets/projectphotos/Plumbing/WhatsApp Image 2026-06-09 at 14.41.06 (1).jpeg"
     ]
   },
   {
